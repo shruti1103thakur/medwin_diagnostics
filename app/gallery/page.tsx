@@ -4,7 +4,12 @@ import { useState } from 'react'
 export default function GalleryPage() {
   const categories = ['All', 'MRI & CT', 'Ultrasound', 'Pathology Lab', 'Reception', 'Equipment']
   const [activeCategory, setActiveCategory] = useState('All')
-  const [lightbox, setLightbox] = useState(null)
+  // const [lightbox, setLightbox] = useState(null)
+  const [lightbox, setLightbox] = useState<{
+  title: string;
+  category: string;
+  src: string;
+} | null>(null);
 
   const images = [
     {
