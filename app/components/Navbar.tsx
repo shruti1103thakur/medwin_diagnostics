@@ -99,7 +99,7 @@ export default function Navbar() {
             <img
               src="/logo.md.jpeg"
               alt="Medwin Diagnostics"
-              className="h-14 w-auto object-contain"
+              className="h-11 w-auto object-contain"
             />
           </Link>
 
