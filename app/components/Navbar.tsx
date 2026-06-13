@@ -155,11 +155,11 @@ export default function Navbar() {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-2">
-            <a href="tel:+916260475501"
+            {/* <a href="tel:+916260475501"
               className="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded text-sm font-mono text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-all"
             >
               <Phone size={14} /> Call Now
-            </a>
+            </a> */}
             <Link
               href="/appointment"
               className="flex items-center gap-2 px-5 py-2 bg-red-600 hover:bg-red-700 text-white rounded text-sm font-mono font-semibold transition-colors"

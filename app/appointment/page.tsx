@@ -48,30 +48,23 @@ export default function AppointmentPage() {
 
       {/* Hero */}
     {/* Hero */}
-<section className="relative text-white py-20 px-4 overflow-hidden">
-  {/* Background image */}
+<section className="relative py-20 px-4 overflow-hidden">
   <img
     src="/contactimg.png"
     alt="Book Appointment Medwin Diagnostics"
     className="absolute inset-0 w-full h-full object-cover"
   />
-  {/* Dark overlay */}
-  <div className="absolute inset-0 bg-black/65" />
-  {/* Red gradient */}
-  <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
-
-  {/* Content */}
+  {/* No overlay - original image shows clearly */}
   <div className="relative z-10 max-w-7xl mx-auto text-center">
     <p className="section-badge justify-center mb-4">Schedule a Visit</p>
-    <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6">
+    <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6 text-gray-900">
       Book an <span className="text-red-500">Appointment</span>
     </h1>
-    <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+    <p className="text-black font-bold text-lg max-w-2xl mx-auto">
       Fill the form below or call us directly. We'll confirm your slot within 30 minutes.
     </p>
   </div>
 </section>
-
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
 
