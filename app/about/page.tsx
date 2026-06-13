@@ -68,7 +68,32 @@ export default function AboutPage() {
     <div className="bg-white text-gray-800">
 
       {/* ══════════════════════════════════════════ HERO */}
-      <section className="relative text-white py-24 px-4 overflow-hidden">
+
+      <section className="relative py-24 px-4 overflow-hidden">
+        <img
+          src="/aboutimg.png"
+          alt="Medwin Diagnostics Centre"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        {/* No full overlay - image stays original */}
+        <div className="relative z-10 max-w-7xl mx-auto text-center">
+          {/* White backdrop only behind text block */}
+          <div className="inline-block px-10 py-10 max-w-3xl mx-auto">
+            <p className="section-badge justify-center mb-4">About Us</p>
+            <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6 text-gray-900">
+              Indore's Most Trusted<br />
+              <span className="text-red-500">Diagnostic Centre</span>
+            </h1>
+            <p className="text-black font-bold text-lg max-w-2xl mx-auto leading-relaxed">
+              
+            </p>
+            <p className="text-black font-bold text-sm font-mono tracking-widest mt-4 uppercase">
+              
+            </p>
+          </div>
+        </div>
+      </section>
+      {/* <section className="relative text-white py-24 px-4 overflow-hidden">
         <img
           src="/aboutimg.png"
           alt="Medwin Diagnostics Centre"
@@ -89,7 +114,28 @@ export default function AboutPage() {
             Accurate Diagnosis • Advanced Technology • Trusted Care
           </p>
         </div>
-      </section>
+      </section> */}
+      {/* <section className="relative text-gray-900 py-24 px-4 overflow-hidden">
+        <img
+          src="/aboutimg.png"
+          alt="Medwin Diagnostics Centre"
+          className="absolute inset-0 w-full h-full object-cover" */}
+        {/* /> */}
+        {/* No overlay - original image shows clearly */}
+        {/* <div className="relative z-10 max-w-7xl mx-auto text-center">
+          <p className="section-badge justify-center mb-4">About Us</p>
+          <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6 text-gray-900">
+            Indore's Most Trusted<br />
+            <span className="text-red-500">Diagnostic Centre</span>
+          </h1> */}
+          {/* <p className="text-gray-800 text-lg max-w-2xl mx-auto leading-relaxed">
+            Providing reliable diagnostic solutions through modern imaging technology, expert medical professionals, and patient-centered healthcare services.
+          </p>
+          <p className="text-gray-700 text-sm font-mono tracking-widest mt-4 uppercase">
+            Accurate Diagnosis • Advanced Technology • Trusted Care
+          </p>
+        </div>
+      </section> */}
 
       {/* ══════════════════════════════════════════ STATS */}
       <section className="py-14 bg-red-600">

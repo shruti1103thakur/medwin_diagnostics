@@ -37,22 +37,22 @@ export default function CTScanPage() {
     <div className="bg-white text-gray-800">
 
       {/* Hero */}
-      <section className="relative text-white py-24 px-4 overflow-hidden">
+  <section className="relative py-24 px-4 overflow-hidden">
         <img
           src="/ctscan.png"
           alt="CT Scan — Medwin Diagnostics"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/65" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
+        {/* No overlay - original image shows clearly */}
         <div className="relative z-10 max-w-7xl mx-auto">
           <div className="max-w-2xl">
             <p className="section-badge mb-4">CT Scan Services</p>
-            <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6">
+            
+            <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6 text-red-900">
               Advanced Computed<br />
-              <span className="text-red-500">Tomography Imaging</span>
+              <span className="text-black">Tomography Imaging</span>
             </h1>
-            <p className="text-gray-300 text-lg leading-relaxed mb-8">
+            <p className="text-black font-bold text-lg leading-relaxed mb-8">
               Computed Tomography (CT) is an advanced imaging technique that produces detailed cross-sectional images of internal organs, bones, blood vessels, and soft tissues.
             </p>
             <div className="flex flex-wrap gap-4">

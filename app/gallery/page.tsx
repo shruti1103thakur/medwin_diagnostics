@@ -85,21 +85,20 @@ export default function GalleryPage() {
     <div className="bg-white text-gray-800">
 
       {/* Hero */}
-      <section className="relative text-white py-20 px-4 overflow-hidden">
+     <section className="relative py-20 px-4 overflow-hidden">
         <img
           src="/galleryimg.png"
           alt="Medwin Diagnostics Gallery"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/65" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
+        {/* No overlay - original image shows clearly */}
         <div className="relative z-10 max-w-7xl mx-auto text-center">
           <p className="section-badge justify-center mb-4">Our Facility</p>
-          <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6">
+          <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6 text-gray-900">
             Photo <span className="text-red-500">Gallery</span>
           </h1>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Take a tour of our world-class diagnostic facility in Indore.
+          <p className="text-black font-bold text-lg max-w-2xl mx-auto">
+            .
           </p>
         </div>
       </section>

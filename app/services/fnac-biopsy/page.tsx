@@ -30,23 +30,22 @@ export default function FnacBiopsyPage() {
     <div className="bg-white text-gray-800">
 
       {/* Hero */}
-      <section className="relative text-white py-24 px-4 overflow-hidden min-h-[480px] flex items-center">
+     <section className="relative py-24 px-4 overflow-hidden min-h-[480px] flex items-center">
         <img
           src="/fanc.png"
           alt="FNAC & Biopsy — Medwin Diagnostics"
           className="absolute inset-0 w-full h-full object-cover object-center"
           style={{ imageRendering: 'crisp-edges' }}
         />
-        <div className="absolute inset-0 bg-black/65" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-transparent" />
+        {/* No overlay - original image shows clearly */}
         <div className="relative z-10 max-w-7xl mx-auto w-full">
           <div className="max-w-2xl">
             <p className="section-badge mb-4">Image-Guided Procedures</p>
-            <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6 leading-tight text-gray-900">
               FNAC &<br />
               <span className="text-red-500">Biopsy Services</span>
             </h1>
-            <p className="text-gray-300 text-lg leading-relaxed mb-8">
+            <p className="text-white font-bold text-lg leading-relaxed mb-8">
               Our specialists perform image-guided procedures to obtain accurate tissue samples for diagnostic evaluation — minimally invasive, precise and reliable.
             </p>
             <div className="flex flex-wrap gap-4">

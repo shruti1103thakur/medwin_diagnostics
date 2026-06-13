@@ -54,7 +54,7 @@ _Please send my diagnostic report on this WhatsApp number. Thank you._
     <div className="bg-white text-gray-800">
 
       {/* Hero */}
-      <section className="relative text-white py-24 px-4 overflow-hidden">
+      {/* <section className="relative text-white py-24 px-4 overflow-hidden">
         <img
           src="/reportsimg.png"
           alt="Online Reports Medwin Diagnostics"
@@ -70,6 +70,24 @@ _Please send my diagnostic report on this WhatsApp number. Thank you._
           </h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
             Our secure digital reporting system enables patients to access diagnostic reports anytime and anywhere.
+          </p>
+        </div>
+      </section> */}
+      <section className="relative py-24 px-4 overflow-hidden">
+        <img
+          src="/reportsimg.png"
+          alt="Online Reports Medwin Diagnostics"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        {/* No overlay - original image shows clearly */}
+        <div className="relative z-10 max-w-7xl mx-auto text-center">
+          <p className="section-badge justify-center mb-4">Online Reports</p>
+          <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6 text-gray-900">
+            Convenient Access to Your<br />
+            <span className="text-red-500">Health Information</span>
+          </h1>
+          <p className="text-black font-bold text-lg max-w-2xl mx-auto">
+            .
           </p>
         </div>
       </section>

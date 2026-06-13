@@ -41,22 +41,21 @@ export default function LiverElastographyPage() {
     <div className="bg-white text-gray-800">
 
       {/* Hero */}
-      <section className="relative text-white py-24 px-4 overflow-hidden">
+   <section className="relative py-24 px-4 overflow-hidden">
         <img
           src="/liver.png"
           alt="Liver Elastography FibroScan — Medwin Diagnostics"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/65" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
+        {/* No overlay - original image shows clearly */}
         <div className="relative z-10 max-w-7xl mx-auto">
           <div className="max-w-2xl">
             <p className="section-badge mb-4">Liver Health Assessment</p>
-            <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6 text-gray-900">
               Liver Elastography<br />
               <span className="text-red-500">(FibroScan)</span>
             </h1>
-            <p className="text-gray-300 text-lg leading-relaxed mb-8">
+            <p className="text-black font-bold text-lg leading-relaxed mb-8">
               FibroScan is an advanced diagnostic technology used to assess liver stiffness and detect liver fibrosis without the need for a biopsy — painless, quick, and highly effective.
             </p>
             <div className="flex flex-wrap gap-4">

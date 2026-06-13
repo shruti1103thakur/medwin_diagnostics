@@ -6,19 +6,19 @@ export default function ContactPage() {
 
       {/* Hero */}
     {/* Hero */}
-<section className="relative text-white py-20 px-4 overflow-hidden">
-  {/* Background image */}
+{/* <section className="relative text-white py-20 px-4 overflow-hidden">
+  
   <img
     src="/contactimg.png"
     alt="Contact Medwin Diagnostics"
     className="absolute inset-0 w-full h-full object-cover"
   />
-  {/* Dark overlay */}
+  
   <div className="absolute inset-0 bg-black/65" />
-  {/* Red gradient */}
+  
   <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
 
-  {/* Content */}
+  
   <div className="relative z-10 max-w-7xl mx-auto text-center">
     <p className="section-badge justify-center mb-4">Get In Touch</p>
     <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6">
@@ -26,6 +26,28 @@ export default function ContactPage() {
     </h1>
     <p className="text-gray-300 text-lg max-w-2xl mx-auto">
       Have a question or need to book an appointment? We're here to help.
+    </p>
+  </div>
+</section> */}
+{/* Hero */}
+<section className="relative py-20 px-4 overflow-hidden">
+  <img
+    src="/contactimg.png"
+    alt="Contact Medwin Diagnostics"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+  {/* No overlay - original image shows clearly */}
+
+  <div className="relative z-10 max-w-7xl mx-auto text-center">
+    <p className="section-badge justify-center mb-4">Get In Touch</p>
+    <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6 text-gray-900">
+      Contact <span className="text-red-500">Us</span>
+    </h1>
+    <p className="text-black font-bold text-lg max-w-2xl mx-auto">
+      .
+    </p>
+    <p className="text-black font-bold text-lg max-w-2xl mx-auto">
+      .
     </p>
   </div>
 </section>

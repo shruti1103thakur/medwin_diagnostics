@@ -69,8 +69,7 @@ export default function Navbar() {
         <div className="flex items-center gap-6">
           <span className="flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-red-300 animate-pulse" />
-            Emergency 
-             — 24/7 Available
+            Emergency — 24/7 Available
           </span>
           <span>Mon–Sat: 8:00 AM – 9:00 PM | Sun: 9:00 AM – 2:00 PM</span>
         </div>
@@ -88,9 +87,9 @@ export default function Navbar() {
       <nav
         className={`sticky top-0 z-50 transition-all duration-300 ${
           scrolled
-            ? 'bg-gray-900/95 backdrop-blur-md shadow-2xl shadow-black/50'
-            : 'bg-gray-900'
-        } border-b border-white/5`}
+            ? 'bg-white/95 backdrop-blur-md shadow-lg shadow-black/10'
+            : 'bg-white'
+        } border-b border-gray-200`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-[70px]">
 
@@ -114,19 +113,19 @@ export default function Navbar() {
               >
                 <Link
                   href={link.href}
-                  className="flex items-center gap-1 px-3 py-2 font-mono text-sm font-medium tracking-wide text-gray-400 hover:text-white hover:bg-white/5 rounded transition-colors"
+                  className="flex items-center gap-1 px-3 py-2 font-mono text-sm font-medium tracking-wide text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded transition-colors"
                 >
                   {link.label === 'Online Reports' && (
                     <FileText size={14} className="mr-0.5" />
                   )}
                   {link.label}
                   {link.children && (
-                    <ChevronDown size={13} className="text-gray-500 ml-0.5" />
+                    <ChevronDown size={13} className="text-gray-400 ml-0.5" />
                   )}
                 </Link>
 
                 {link.children && activeDropdown === link.label && (
-                  <div className="absolute top-full left-0 w-64 bg-gray-800 border border-white/10 rounded-lg shadow-2xl shadow-black/60 py-2 z-50 mt-1">
+                  <div className="absolute top-full left-0 w-64 bg-white border border-gray-200 rounded-lg shadow-xl shadow-black/10 py-2 z-50 mt-1">
                     {link.children.map((child, i) => {
                       if ('section' in child && child.section) {
                         return (
@@ -142,7 +141,7 @@ export default function Navbar() {
                         <Link
                           key={child.href}
                           href={child.href!}
-                          className="flex items-center px-4 py-2 text-sm font-mono text-gray-400 hover:text-white hover:bg-white/5 border-l-2 border-transparent hover:border-red-600 transition-all"
+                          className="flex items-center px-4 py-2 text-sm font-mono text-gray-600 hover:text-gray-900 hover:bg-gray-50 border-l-2 border-transparent hover:border-red-600 transition-all"
                         >
                           {child.label}
                         </Link>
@@ -156,9 +155,8 @@ export default function Navbar() {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-2">
-            
-             <a href="tel:+916260475501"
-              className="flex items-center gap-2 px-4 py-2 border border-white/20 rounded text-sm font-mono text-gray-300 hover:bg-white/5 hover:text-white transition-all"
+            <a href="tel:+916260475501"
+              className="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded text-sm font-mono text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-all"
             >
               <Phone size={14} /> Call Now
             </a>
@@ -172,7 +170,7 @@ export default function Navbar() {
 
           {/* Mobile toggle */}
           <button
-            className="md:hidden text-white p-2"
+            className="md:hidden text-gray-700 p-2"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
@@ -182,20 +180,20 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {mobileOpen && (
-          <div className="md:hidden bg-gray-800 border-t border-white/5 py-3 px-4 max-h-[80vh] overflow-y-auto">
+          <div className="md:hidden bg-white border-t border-gray-200 py-3 px-4 max-h-[80vh] overflow-y-auto">
             {navLinks.map((link) => (
               <div key={link.href}>
-                <div className="flex items-center justify-between border-b border-white/5">
+                <div className="flex items-center justify-between border-b border-gray-100">
                   <Link
                     href={link.href}
-                    className="flex-1 py-3 font-mono text-sm text-gray-300 hover:text-white"
+                    className="flex-1 py-3 font-mono text-sm text-gray-700 hover:text-gray-900"
                     onClick={() => !link.children && setMobileOpen(false)}
                   >
                     {link.label}
                   </Link>
                   {link.children && (
                     <button
-                      className="py-3 px-3 text-gray-500"
+                      className="py-3 px-3 text-gray-400"
                       onClick={() =>
                         setMobileExpanded(
                           mobileExpanded === link.label ? null : link.label
@@ -213,7 +211,7 @@ export default function Navbar() {
                 </div>
 
                 {link.children && mobileExpanded === link.label && (
-                  <div className="pl-4 pb-2 bg-gray-900/50 rounded-lg my-1">
+                  <div className="pl-4 pb-2 bg-gray-50 rounded-lg my-1">
                     {link.children.map((child, i) => {
                       if ('section' in child && child.section) {
                         return (
@@ -229,7 +227,7 @@ export default function Navbar() {
                         <Link
                           key={child.href}
                           href={child.href!}
-                          className="block py-2 text-sm font-mono text-gray-400 hover:text-red-400 transition-colors border-l-2 border-transparent hover:border-red-600 pl-2"
+                          className="block py-2 text-sm font-mono text-gray-600 hover:text-red-600 transition-colors border-l-2 border-transparent hover:border-red-600 pl-2"
                           onClick={() => setMobileOpen(false)}
                         >
                           {child.label}
@@ -242,9 +240,8 @@ export default function Navbar() {
             ))}
 
             <div className="mt-4 flex flex-col gap-2 pb-2">
-              
-                <a href="tel:+916260475501"
-                className="flex items-center justify-center gap-2 py-3 border border-white/20 rounded text-sm font-mono text-gray-300 hover:text-white"
+              <a href="tel:+916260475501"
+                className="flex items-center justify-center gap-2 py-3 border border-gray-300 rounded text-sm font-mono text-gray-700 hover:text-gray-900"
               >
                 <Phone size={14} /> +91 6260475501
               </a>

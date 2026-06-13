@@ -124,7 +124,7 @@ export default function HealthPackagesPage() {
     <div className="bg-white text-gray-800">
 
       {/* ══════════════════════════════════════════ HERO */}
-      <section className="relative text-white py-24 px-4 overflow-hidden min-h-[480px] flex items-center">
+      {/* <section className="relative text-white py-24 px-4 overflow-hidden min-h-[480px] flex items-center">
         <img
           src="/healtha.png"
           alt="Preventive Health Checkups at Medwin Diagnostics"
@@ -155,8 +155,38 @@ export default function HealthPackagesPage() {
             </div>
           </div>
         </div>
+      </section> */}
+<section className="relative py-24 px-4 overflow-hidden min-h-[480px] flex items-center">
+        <img
+          src="/healtha.png"
+          alt="Preventive Health Checkups at Medwin Diagnostics"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        {/* No overlay - original image shows clearly */}
+        <div className="relative z-10 max-w-7xl mx-auto w-full">
+          <div className="max-w-2xl">
+            <p className="section-badge mb-5">Preventive Care</p>
+            <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6 leading-tight text-gray-900">
+              Preventive Health<br />
+              <span className="text-red-500">Checkups</span>
+            </h1>
+            <p className="text-black font-bold text-lg leading-relaxed mb-3">
+              Early Detection for Better Health
+            </p>
+            <p className="text-black font-bold leading-relaxed mb-8 max-w-xl">
+              Regular health screenings help identify risk factors and medical conditions before symptoms develop — giving you the best chance at effective treatment and a healthier life.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link href="/appointment" className="btn-primary px-7 py-3.5 rounded-lg text-sm flex items-center gap-2">
+                <Calendar size={16} /> Book a Package
+              </Link>
+              <a href="tel:+916260475501" className="btn-outline px-7 py-3.5 rounded-lg text-sm flex items-center gap-2">
+                <Phone size={16} /> Call Us
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
-
       {/* ══════════════════════════════════════════ STATS */}
       <section className="bg-red-600 py-12">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">

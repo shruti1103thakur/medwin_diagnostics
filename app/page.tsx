@@ -200,8 +200,7 @@ export default function HomePage() {
         {heroSlides.map((slide, i) => (
           <div key={i} className="absolute inset-0 transition-opacity duration-1000" style={{ opacity: i === currentSlide ? 1 : 0 }}>
             <img src={slide.image} alt={slide.imageAlt} className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-black/65" />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
+           
           </div>
         ))}
 
@@ -209,20 +208,20 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div className="max-w-2xl">
               <div className="section-badge mb-5">{heroSlides[currentSlide].badge}</div>
-              <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.08] mb-5 transition-all duration-500">
+              <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-[1.08] mb-5 transition-all duration-500">
                 {heroSlides[currentSlide].headline}
                 <span className="block text-red-500">{heroSlides[currentSlide].highlight}</span>
-                <span className="block text-xl md:text-2xl font-normal text-gray-300 mt-3">
+                <span className="block text-xl md:text-2xl font-normal text-gray-800 mt-3">
                   {heroSlides[currentSlide].sub}
                 </span>
               </h1>
-              <p className="text-gray-300 text-base leading-relaxed mb-8 max-w-xl">
+              <p className="text-gray-800 text-base leading-relaxed mb-8 max-w-xl">
                 {heroSlides[currentSlide].desc}
               </p>
-              {/* Key Highlights */}
+            
               <div className="flex flex-wrap gap-3 mb-8">
                 {['Advanced Diagnostic Technology', 'Experienced Medical Experts', 'Fast & Reliable Reports', 'Affordable Pricing', 'Patient-Centered Care'].map((h) => (
-                  <span key={h} className="flex items-center gap-1.5 text-xs text-gray-300 bg-white/10 border border-white/15 rounded-full px-3 py-1">
+                  <span key={h} className="flex items-center gap-1.5 text-xs text-gray-900 bg-white/30 border border-black/20 rounded-full px-3 py-1">
                     <CheckCircle size={11} className="text-red-400" /> {h}
                   </span>
                 ))}
@@ -234,7 +233,7 @@ export default function HomePage() {
                 <Link href="/contact" className="btn-outline px-7 py-3.5 rounded-lg text-sm flex items-center gap-2">
                   <MapPin size={16} /> Get Directions
                 </Link>
-                <a href="tel:+916260475501" className="flex items-center gap-2 px-7 py-3.5 rounded-lg text-sm border border-white/20 text-white hover:bg-white/10 transition-all">
+                <a href="tel:+916260475501" className="flex items-center gap-2 px-7 py-3.5 rounded-lg text-sm border border-black/20 text-gray-900 bg-white/30 hover:bg-white/50 transition-all">
                   <Phone size={16} /> Call Us
                 </a>
               </div>
@@ -278,6 +277,88 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      {/* <section className="relative h-[90vh] min-h-[600px] overflow-hidden bg-gray-900">
+        {heroSlides.map((slide, i) => (
+          <div key={i} className="absolute inset-0 transition-opacity duration-1000" style={{ opacity: i === currentSlide ? 1 : 0 }}>
+            <img src={slide.image} alt={slide.imageAlt} className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-black/65" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
+          </div>
+        ))}
+
+        <div className="relative z-10 h-full flex items-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div className="max-w-2xl">
+              <div className="section-badge mb-5">{heroSlides[currentSlide].badge}</div>
+              <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.08] mb-5 transition-all duration-500">
+                {heroSlides[currentSlide].headline}
+                <span className="block text-red-500">{heroSlides[currentSlide].highlight}</span>
+                <span className="block text-xl md:text-2xl font-normal text-gray-300 mt-3">
+                  {heroSlides[currentSlide].sub}
+                </span>
+              </h1>
+              <p className="text-gray-300 text-base leading-relaxed mb-8 max-w-xl">
+                {heroSlides[currentSlide].desc}
+              </p>
+              {/* Key Highlights */}
+              {/* <div className="flex flex-wrap gap-3 mb-8">
+                {['Advanced Diagnostic Technology', 'Experienced Medical Experts', 'Fast & Reliable Reports', 'Affordable Pricing', 'Patient-Centered Care'].map((h) => (
+                  <span key={h} className="flex items-center gap-1.5 text-xs text-gray-300 bg-white/10 border border-white/15 rounded-full px-3 py-1">
+                    <CheckCircle size={11} className="text-red-400" /> {h}
+                  </span>
+                ))}
+              </div>
+              <div className="flex flex-wrap gap-4">
+                <Link href="/appointment" className="btn-primary px-7 py-3.5 rounded-lg text-sm flex items-center gap-2">
+                  <Calendar size={16} /> Book Appointment
+                </Link>
+                <Link href="/contact" className="btn-outline px-7 py-3.5 rounded-lg text-sm flex items-center gap-2">
+                  <MapPin size={16} /> Get Directions
+                </Link>
+                <a href="tel:+916260475501" className="flex items-center gap-2 px-7 py-3.5 rounded-lg text-sm border border-white/20 text-white hover:bg-white/10 transition-all">
+                  <Phone size={16} /> Call Us
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Dots */}
+        {/* <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-3">
+          {heroSlides.map((_, i) => (
+            <button key={i} onClick={() => setCurrentSlide(i)}
+              className={`h-2 rounded-full transition-all duration-300 ${i === currentSlide ? 'bg-red-600 w-8' : 'bg-white/40 w-2 hover:bg-white/70'}`} />
+          ))}
+        </div>
+        <button onClick={() => setCurrentSlide((p) => (p - 1 + heroSlides.length) % heroSlides.length)}
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-black/40 border border-white/20 flex items-center justify-center text-white hover:bg-red-600 hover:border-red-600 transition-all">
+          <ChevronLeft size={20} />
+        </button>
+        <button onClick={() => setCurrentSlide((p) => (p + 1) % heroSlides.length)}
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-black/40 border border-white/20 flex items-center justify-center text-white hover:bg-red-600 hover:border-red-600 transition-all">
+          <ChevronRight size={20} />
+        </button> */}
+
+        {/* Floating card */}
+        {/* <div className="hidden lg:block absolute right-8 bottom-12 z-20">
+          <div className="bg-white rounded-2xl p-5 w-64 shadow-2xl border border-gray-100">
+            <div className="flex items-center justify-between mb-3">
+              <span className="font-mono text-xs text-red-600 font-semibold tracking-widest uppercase">Emergency</span>
+              <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+            </div>
+            <p className="font-mono text-lg font-bold text-gray-900 mb-1">+91 6260475501</p>
+            <p className="text-xs text-gray-500 mb-4">Available 24 hrs · CT & MRI on call</p>
+            <div className="border-t border-gray-100 pt-4 grid grid-cols-2 gap-2">
+              {[['CT Scan', '~15 min'], ['USG', '~20 min'], ['Reports', '2-4 hrs'], ['Parking', 'Free']].map(([k, v]) => (
+                <div key={k}>
+                  <p className="text-[10px] text-gray-400 font-mono uppercase">{k}</p>
+                  <p className="text-gray-900 text-sm font-semibold">{v}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div> 
+      </section>  */}
 
       {/* ══════════════════════════════════════════ STATS */}
       <section className="bg-red-600 py-12">

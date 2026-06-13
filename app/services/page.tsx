@@ -100,7 +100,7 @@ export default function ServicesPage() {
     <div className="bg-white text-gray-800">
 
       {/* Hero */}
-      <section className="relative text-white py-20 px-4 overflow-hidden min-h-[380px] flex items-center">
+      {/* <section className="relative text-white py-20 px-4 overflow-hidden min-h-[380px] flex items-center">
         <img
           src="/servicesimg.png"
           alt="Medwin Diagnostics Services"
@@ -116,6 +116,25 @@ export default function ServicesPage() {
           </h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
             Advanced imaging and pathology services under one roof — accurate, affordable, and fast.
+          </p>
+        </div>
+      </section> */}
+      <section className="relative py-20 px-4 overflow-hidden min-h-[380px] flex items-center">
+        <img
+          src="/servicesimg.png"
+          alt="Medwin Diagnostics Services"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+          style={{ imageRendering: 'crisp-edges' }}
+        />
+        {/* No overlay - original image shows clearly */}
+        <div className="relative z-10 max-w-7xl mx-auto w-full text-center">
+          <p className="section-badge justify-center mb-4">What We Offer</p>
+          <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6 text-gray-900">
+            Our Diagnostic <span className="text-red-500">Services</span>
+          </h1>
+          <p className="text-white font-bold text-lg max-w-2xl mx-auto">
+          </p>
+           <p className="text-white font-bold text-lg max-w-2xl mx-auto">
           </p>
         </div>
       </section>
@@ -192,7 +211,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-4 bg-gray-900 text-white text-center">
+      <section className="py-20 px-4 text-white text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
             Not sure which test you need?
