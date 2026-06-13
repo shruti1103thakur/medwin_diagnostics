@@ -90,8 +90,8 @@ export default function PathologyPage() {
               Comprehensive<br />
               <span className="text-red-500">Laboratory Diagnostics</span>
             </h1>
-            <p className="text-white font-bold text-lg leading-relaxed mb-8">
-              Our modern NABL-accredited laboratory supports a broad spectrum of diagnostic investigations — from routine blood tests to advanced histopathology.
+            <p className="text-black font-bold text-lg leading-relaxed mb-8">
+              Our modern NABL-accredited laboratory supports a broad spectrum of <br/>diagnostic investigations — from routine <br/> blood tests to advanced histopathology.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/appointment" className="btn-primary px-8 py-4 rounded-lg text-sm flex items-center gap-2">
