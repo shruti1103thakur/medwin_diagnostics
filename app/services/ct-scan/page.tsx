@@ -50,7 +50,7 @@ export default function CTScanPage() {
             
             <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6 text-red-900">
               Advanced Computed<br />
-              <span className="text-black">Tomography Imaging</span>
+              <span className="text-white">Tomography Imaging</span>
             </h1>
             <p className="text-black font-bold text-lg leading-relaxed mb-8">
               Computed Tomography (CT) is an advanced imaging technique that produces detailed cross-sectional images of internal organs, bones, blood vessels, and soft tissues.
